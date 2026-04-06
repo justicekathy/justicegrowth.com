@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Justice Growth | Virtual Assistant &amp; Systems Expert</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#f5f0eb;color:#1a1a1a;}
+a{text-decoration:none;color:inherit;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;background:#f5f0eb;position:sticky;top:0;z-index:100;border-bottom:1px solid #e8e0d8;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#1a1a1a;}
+.nav-links{display:flex;align-items:center;gap:2rem;}
+.nav-links a{font-size:0.9rem;font-weight:500;color:#555;transition:color 0.2s;}
+.nav-links a:hover{color:#1a1a1a;}
+.nav-cta{background:#1a1a1a;color:#fff !important;padding:0.6rem 1.4rem;border-radius:4px;font-weight:600 !important;transition:background 0.2s !important;}
+.nav-cta:hover{background:#333 !important;}
+.hero{min-height:90vh;display:flex;align-items:center;padding:5rem 5%;gap:4rem;}
+.hero-left{flex:1;max-width:600px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5rem);line-height:1.1;color:#1a1a1a;margin-bottom:1.5rem;}
+.hero h1 em{color:#c9a84c;font-style:italic;}
+  .hero-tagline{font-size:1.15rem;color:#444;margin-bottom:0.8rem;font-weight:500;}
+.hero-sub{font-size:0.95rem;color:#666;line-height:1.7;margin-bottom:2rem;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;}
+.btn-primary{background:#1a1a1a;color:#fff;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;transition:background 0.2s;}
+.btn-primary:hover{background:#333;}
+.btn-secondary{border:2px solid #1a1a1a;color:#1a1a1a;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;transition:all 0.2s;}
+.btn-secondary:hover{background:#1a1a1a;color:#fff;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:0.5rem;}
+  .badge{background:#fff;border:1px solid #e0d8ce;padding:0.4rem 0.9rem;border-radius:20px;font-size:0.8rem;font-weight:500;color:#555;}
+  .hero-right{flex:0 0 320px;}
+.hero-card{background:#1a1a1a;color:#fff;border-radius:12px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,0.15);}
+.hero-card-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:0.3rem;}
+.hero-card-title{font-size:0.8rem;color:#c9a84c;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;}
+.hero-card ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
+.hero-card ul li{font-size:0.85rem;color:#ccc;display:flex;align-items:center;gap:0.5rem;}
+.hero-card ul li::before{content:'';width:6px;height:6px;background:#c9a84c;border-radius:50%;flex-shrink:0;}
+  section{padding:5rem 5%;}
+.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#c9a84c;margin-bottom:1rem;}
+.section-divider{width:50px;height:2px;background:#c9a84c;margin:1rem auto 0;}
+.about{background:#fff;}
+.about-inner{max-width:800px;margin:0 auto;text-align:center;}
+.about h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:1.5rem;}
+.about h2 em{color:#c9a84c;font-style:italic;}
+  .about p{font-size:1rem;color:#555;line-height:1.8;margin-bottom:1rem;}
+.about-quote{background:#f5f0eb;border-left:3px solid #c9a84c;padding:1.5rem 2rem;margin-top:2rem;text-align:left;border-radius:0 8px 8px 0;}
+.about-quote p{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#1a1a1a;margin:0;}
+.ai-strip{background:#1a1a1a;color:#fff;text-align:center;}
+.ai-strip h3{font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:1rem;color:#fff;}
+  .ai-strip p{font-size:0.95rem;color:#aaa;max-width:600px;margin:0 auto;line-height:1.7;}
+.services{background:#f5f0eb;}
+.services-inner{max-width:1100px;margin:0 auto;}
+.services h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);margin-bottom:0.5rem;}
+.services h2 em{color:#c9a84c;font-style:italic;}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem;}
+.service-card{background:#fff;border-radius:10px;padding:1.8rem;border:1px solid #e8e0d8;transition:box-shadow 0.2s;}
+  .service-card:hover{box-shadow:0 8px 30px rgba(0,0,0,0.08);}
+.service-card h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:0.6rem;color:#1a1a1a;}
+.service-card p{font-size:0.88rem;color:#666;line-height:1.7;}
+.how{background:#fff;}
+  .how-inner{max-width:900px;margin:0 auto;}
+.how h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);margin-bottom:0.5rem;}
+.how h2 em{color:#c9a84c;font-style:italic;}
+  .how-steps{display:flex;flex-direction:column;gap:2rem;margin-top:2.5rem;}
+.how-step{display:flex;align-items:center;gap:1.5rem;}
+.step-num-line{display:flex;align-items:center;gap:1rem;flex-shrink:0;width:80px;}
+.step-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:#c9a84c;line-height:1;}
+.step-line{flex:1;height:2px;background:#c9a84c;}
+.step-content h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:0.3rem;}
+.step-content p{font-size:0.9rem;color:#666;line-height:1.6;}
+.why{background:#f5f0eb;text-align:center;}
+  .why-inner{max-width:800px;margin:0 auto;}
+.why h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:2rem;}
+.why h2 em{color:#c9a84c;font-style:italic;}
+  .why-bullets{display:flex;flex-direction:column;gap:1rem;text-align:left;margin-bottom:2rem;}
+.why-bullet{display:flex;align-items:flex-start;gap:1rem;background:#fff;padding:1.2rem 1.5rem;border-radius:8px;border:1px solid #e8e0d8;}
+.why-bullet-icon{color:#c9a84c;font-size:1.2rem;flex-shrink:0;margin-top:2px;}
+  .why-bullet-text h3{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:0.2rem;}
+.why-bullet-text p{font-size:0.88rem;color:#666;line-height:1.6;}
+.why-quote{background:#1a1a1a;color:#fff;padding:2rem;border-radius:10px;text-align:center;}
+.why-quote p{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;margin-bottom:0.8rem;}
+.why-quote span{font-size:0.8rem;color:#c9a84c;letter-spacing:0.1em;text-transform:uppercase;}
+.contact{background:#fff;}
+.contact-inner{max-width:700px;margin:0 auto;text-align:center;}
+.contact h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);margin-bottom:0.5rem;}
+.contact h2 em{color:#c9a84c;font-style:italic;}
+  .contact-sub{font-size:1rem;color:#555;margin-bottom:2.5rem;}
+.contact-form{text-align:left;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{margin-bottom:1.2rem;display:flex;flex-direction:column;}
+.form-group label{font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#555;margin-bottom:0.4rem;}
+.form-group input,.form-group textarea{padding:0.8rem 1rem;border:1px solid #ddd;border-radius:6px;font-family:'Inter',sans-serif;font-size:0.95rem;background:#fafafa;transition:border 0.2s;}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#c9a84c;}
+  .form-group textarea{resize:vertical;min-height:130px;}
+.form-submit{width:100%;background:#1a1a1a;color:#fff;padding:1rem;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background 0.2s;margin-top:0.5rem;}
+.form-submit:hover{background:#333;}
+footer{background:#1a1a1a;color:#fff;text-align:center;padding:2.5rem 5%;}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.8rem;}
+footer p{font-size:0.8rem;color:#888;}
+@media(max-width:768px){.hero{flex-direction:column;padding:3rem 5%;}.hero-right{display:none;}.form-row{grid-template-columns:1fr;}.nav-links{display:none;}}
+</style>
+  </head>
+  <body>
+  <nav><div class="nav-logo">Justice Growth</div><div class="nav-links"><a href="#about">About</a><a href="#services">Services</a><a href="#how">How It Works</a><a href="#why">Why Us</a><a href="#contact" class="nav-cta">Work With Me</a></div></nav>
+  <section class="hero"><div class="hero-left"><h1>Focus on<br><em>Growth,</em></h1><p class="hero-tagline">I free small business owners from operational chaos.</p><p class="hero-sub">Justice Growth handles the systems, tasks, and back-end operations that slow you down, so you can focus on what actually moves your business forward.</p><div class="hero-btns"><a href="#contact" class="btn-primary">Work With Me</a><a href="#services" class="btn-secondary">See My Services</a></div><div class="hero-badges"><span class="badge">Workflow Automation</span><span class="badge">Calendar &amp; Inbox Mgmt</span><span class="badge">Client Onboarding</span><span class="badge">AI-Powered Operations</span></div></div><div class="hero-right"><div class="hero-card"><div class="hero-card-name">Justice Growth</div><div class="hero-card-title">Virtual Assistant &amp; Systems Expert</div><ul><li>Administrative Support</li><li>Calendar &amp; Inbox Management</li><li>Workflow &amp; Systems Design</li><li>Client Onboarding</li><li>Data Entry &amp; Reporting</li><li>AI-Powered Operations</li></ul></div></div></section>
+  <section class="about" id="about"><div class="about-inner"><p class="section-label">About Justice Growth</p><h2>Operational Chaos?<br><em>That's My Specialty.</em></h2><p>I'm Kathy Justice, founder of Justice Growth. I work with small business owners who are great at what they do but buried in the back-end work that keeps their business running. My job is to take that off your plate.</p><p>From managing your calendar and inbox to building the systems that keep your operations running smoothly, I bring structure, clarity, and consistency to everything I touch.</p><div class="about-quote"><p>"I help small business owners reclaim their time, eliminate operational chaos, and create systems that run without them, so they can focus on growth, high-value work, and profits."</p></div></div></section>
+  <section class="ai-strip"><h3>Experienced with AI Tools and Modern Automation</h3><p>I integrate AI-powered tools and automation into my workflow to deliver faster, smarter, and more consistent results for your business, keeping you ahead of the curve.</p></section>
+  <section class="services" id="services"><div class="services-inner"><p class="section-label">What I Do</p><h2>Services Built for<br><em>Busy Business Owners</em></h2><div class="services-grid"><div class="service-card"><h3>Administrative Support</h3><p>Day-to-day tasks handled with precision, data entry, document management, reporting, and everything that keeps your operations organized and moving.</p></div><div class="service-card"><h3>Calendar &amp; Inbox Management</h3><p>Never miss a meeting or message. I manage your schedule and communications so your day runs on your terms, not your inbox's.</p></div><div class="service-card"><h3>Workflow &amp; Systems Design</h3><p>I build repeatable, scalable systems that reduce chaos and free you from being the bottleneck in your own business.</p></div><div class="service-card"><h3>Client Onboarding</h3><p>Smooth, professional onboarding experiences that make a great first impression and set the tone for long-term client relationships.</p></div><div class="service-card"><h3>Customer Service Support</h3><p>Responsive, professional handling of customer inquiries and support, so your clients always feel taken care of.</p></div><div class="service-card"><h3>Executive Assistant Services</h3><p>High-level support for busy executives, strategic scheduling, correspondence management, and project coordination.</p></div></div></div></section>
+  <section class="how" id="how"><div class="how-inner"><p class="section-label">The Process</p><h2>Simple. Streamlined.<br><em>Done Right.</em></h2><div class="how-steps"><div class="how-step"><div class="step-num-line"><span class="step-num">1</span><span class="step-line"></span></div><div class="step-content"><h3>We Connect</h3><p>Tell me about your business, your pain points, and what's taking up too much of your time.</p></div></div><div class="how-step"><div class="step-num-line"><span class="step-num">2</span><span class="step-line"></span></div><div class="step-content"><h3>We Map It Out</h3><p>I assess your needs and put together a clear plan for how I can take work off your plate immediately.</p></div></div><div class="how-step"><div class="step-num-line"><span class="step-num">3</span><span class="step-line"></span></div><div class="step-content"><h3>I Get to Work</h3><p>I plug into your business and st
