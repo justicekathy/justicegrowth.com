@@ -6,93 +6,93 @@
   <title>Justice Growth | Virtual Assistant &amp; Systems Expert</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',sans-serif;background:#f5f0eb;color:#1a1a1a;}
-a{text-decoration:none;color:inherit;}
-nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;background:#f5f0eb;position:sticky;top:0;z-index:100;border-bottom:1px solid #e8e0d8;}
-.nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#1a1a1a;}
-.nav-links{display:flex;align-items:center;gap:2rem;}
-.nav-links a{font-size:0.9rem;font-weight:500;color:#555;transition:color 0.2s;}
-.nav-links a:hover{color:#1a1a1a;}
-.nav-cta{background:#1a1a1a;color:#fff !important;padding:0.6rem 1.4rem;border-radius:4px;font-weight:600 !important;transition:background 0.2s !important;}
-.nav-cta:hover{background:#333 !important;}
-.hero{min-height:90vh;display:flex;align-items:center;padding:4rem 5%;gap:4rem;background:#f5f0eb;}
-.hero-left{flex:1;max-width:580px;}
-.hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:700;line-height:1.1;margin-bottom:1.2rem;color:#1a1a1a;}
-.hero-left h1 em{color:#b8973a;font-style:italic;}
-.hero-sub{font-size:1.15rem;font-weight:500;color:#1a1a1a;margin-bottom:0.8rem;}
-.hero-desc{font-size:1rem;color:#555;line-height:1.7;margin-bottom:2rem;max-width:480px;}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;}
-.btn-primary{background:#1a1a1a;color:#fff;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;transition:background 0.2s;}
-.btn-primary:hover{background:#333;}
-.btn-outline{background:transparent;color:#1a1a1a;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;border:2px solid #1a1a1a;transition:all 0.2s;}
-.btn-outline:hover{background:#1a1a1a;color:#fff;}
-.hero-tags{display:flex;gap:0.6rem;flex-wrap:wrap;}
-.hero-tag{background:#fff;color:#555;padding:0.35rem 0.9rem;border-radius:20px;font-size:0.8rem;font-weight:500;border:1px solid #e0d8cf;}
-.hero-right{flex:0 0 auto;}
-.hero-card{background:#1a1a1a;color:#fff;padding:2rem;border-radius:8px;width:300px;}
-.hero-card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.3rem;}
-.hero-card-sub{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;color:#b8973a;text-transform:uppercase;margin-bottom:1.2rem;}
-.hero-card ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
-.hero-card ul li{font-size:0.9rem;color:#ccc;padding-left:1rem;position:relative;}
-.hero-card ul li::before{content:'•';position:absolute;left:0;color:#b8973a;}
-.about{padding:5rem 5%;background:#fff;}
-.about-inner{max-width:1100px;margin:0 auto;display:flex;gap:4rem;align-items:flex-start;}
-.about-text{flex:1;}
-.about-label{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;color:#b8973a;text-transform:uppercase;margin-bottom:1rem;}
-.about-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;margin-bottom:1.2rem;line-height:1.2;}
-.about-text p{font-size:1rem;color:#444;line-height:1.75;margin-bottom:1rem;}
-.about-photo{flex:0 0 320px;height:380px;background:#e8e0d8;border-radius:8px;overflow:hidden;}
-.about-photo img{width:100%;height:100%;object-fit:cover;}
-.ai-strip{background:#1a1a1a;color:#fff;padding:2rem 5%;text-align:center;}
-.ai-strip p{font-size:0.95rem;color:#ccc;max-width:600px;margin:0 auto;}
-.ai-strip strong{color:#b8973a;}
-.services{padding:5rem 5%;background:#f5f0eb;}
-.services-inner{max-width:1100px;margin:0 auto;}
-.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;color:#b8973a;text-transform:uppercase;margin-bottom:0.8rem;text-align:center;}
-.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;text-align:center;margin-bottom:0.8rem;}
-.section-sub{font-size:1rem;color:#555;text-align:center;margin-bottom:3rem;}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
-.service-card{background:#fff;padding:2rem;border-radius:8px;border:1px solid #e8e0d8;transition:transform 0.2s,box-shadow 0.2s;}
-.service-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
-.service-icon{font-size:1.5rem;margin-bottom:1rem;}
-.service-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;}
-.service-card p{font-size:0.9rem;color:#555;line-height:1.65;}
-.how{padding:5rem 5%;background:#fff;}
-.how-inner{max-width:800px;margin:0 auto;}
-.how-steps{display:flex;flex-direction:column;gap:2.5rem;margin-top:2rem;}
-.how-step{display:flex;gap:2rem;align-items:flex-start;}
-.step-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#b8973a;min-width:2.5rem;line-height:1;}
-.step-line{width:1px;background:#b8973a;flex:1;margin-top:0.5rem;min-height:60px;}
-.step-content h3{font-size:1rem;font-weight:600;margin-bottom:0.4rem;}
-.step-content p{font-size:0.9rem;color:#555;line-height:1.65;}
-.why{padding:5rem 5%;background:#f5f0eb;}
-.why-inner{max-width:1000px;margin:0 auto;}
-.why-heading{text-align:center;margin-bottom:3rem;}
-.why-heading h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1;}
-.why-heading h2 em{color:#b8973a;font-style:italic;display:block;}
-.why-divider{width:60px;height:2px;background:#b8973a;margin:1.2rem auto 0;}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-bottom:3rem;}
-.why-item{background:#fff;padding:1.8rem;border-radius:8px;border-left:3px solid #b8973a;}
-.why-item h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem;}
-.why-item p{font-size:0.9rem;color:#555;line-height:1.65;}
-.why-quote-box{background:#1a1a1a;color:#fff;padding:2.5rem;border-radius:8px;text-align:center;}
-.why-quote-box blockquote{font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;line-height:1.5;margin-bottom:1rem;color:#f5f0eb;}
-.why-quote-box cite{font-size:0.85rem;color:#b8973a;font-style:normal;font-weight:600;}
-.contact{padding:5rem 5%;background:#fff;}
-.contact-inner{max-width:680px;margin:0 auto;}
-.contact-inner .section-label,.contact-inner .section-title,.contact-inner .section-sub{text-align:center;}
-.contact form{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
-.contact input,.contact textarea{width:100%;padding:0.9rem 1rem;border:1px solid #e0d8cf;border-radius:4px;font-family:'Inter',sans-serif;font-size:0.95rem;background:#f5f0eb;color:#1a1a1a;transition:border-color 0.2s;}
-.contact input:focus,.contact textarea:focus{outline:none;border-color:#b8973a;}
-.contact textarea{resize:vertical;min-height:140px;}
-.contact button[type="submit"]{background:#1a1a1a;color:#fff;padding:1rem 2rem;border:none;border-radius:4px;font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s;font-family:'Inter',sans-serif;}
-.contact button[type="submit"]:hover{background:#333;}
-footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:center;justify-content:space-between;}
-.footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;}
-.footer-copy{font-size:0.8rem;color:#888;}
-@media(max-width:768px){
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter',sans-serif;background:#f5f0eb;color:#1a1a1a;}
+  a{text-decoration:none;color:inherit;}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;background:#f5f0eb;position:sticky;top:0;z-index:100;border-bottom:1px solid #e8e0d8;}
+  .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#1a1a1a;}
+  .nav-links{display:flex;align-items:center;gap:2rem;}
+  .nav-links a{font-size:0.9rem;font-weight:500;color:#555;transition:color 0.2s;}
+  .nav-links a:hover{color:#1a1a1a;}
+  .nav-cta{background:#1a1a1a;color:#fff !important;padding:0.6rem 1.4rem;border-radius:4px;font-weight:600 !important;transition:background 0.2s !important;}
+  .nav-cta:hover{background:#333 !important;}
+  .hero{min-height:90vh;display:flex;align-items:center;padding:4rem 5%;gap:4rem;background:#f5f0eb;}
+  .hero-left{flex:1;max-width:580px;}
+  .hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:700;line-height:1.1;margin-bottom:1.2rem;color:#1a1a1a;}
+  .hero-left h1 em{color:#b8973a;font-style:italic;}
+  .hero-sub{font-size:1.15rem;font-weight:500;color:#1a1a1a;margin-bottom:0.8rem;}
+  .hero-desc{font-size:1rem;color:#555;line-height:1.7;margin-bottom:2rem;max-width:480px;}
+  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;}
+  .btn-primary{background:#1a1a1a;color:#fff;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;transition:background 0.2s;}
+  .btn-primary:hover{background:#333;}
+  .btn-outline{background:transparent;color:#1a1a1a;padding:0.85rem 2rem;border-radius:4px;font-weight:600;font-size:0.95rem;border:2px solid #1a1a1a;transition:all 0.2s;}
+  .btn-outline:hover{background:#1a1a1a;color:#fff;}
+  .hero-tags{display:flex;gap:0.6rem;flex-wrap:wrap;}
+  .hero-tag{background:#fff;color:#555;padding:0.35rem 0.9rem;border-radius:20px;font-size:0.8rem;font-weight:500;border:1px solid #e0d8cf;}
+  .hero-right{flex:0 0 auto;}
+  .hero-card{background:#1a1a1a;color:#fff;padding:2rem;border-radius:8px;width:300px;}
+  .hero-card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.3rem;}
+  .hero-card-sub{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;color:#b8973a;text-transform:uppercase;margin-bottom:1.2rem;}
+  .hero-card ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
+  .hero-card ul li{font-size:0.9rem;color:#ccc;padding-left:1rem;position:relative;}
+  .hero-card ul li::before{content:'•';position:absolute;left:0;color:#b8973a;}
+  .about{padding:5rem 5%;background:#fff;}
+  .about-inner{max-width:1100px;margin:0 auto;display:flex;gap:4rem;align-items:flex-start;}
+  .about-text{flex:1;}
+  .about-label{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;color:#b8973a;text-transform:uppercase;margin-bottom:1rem;}
+  .about-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;margin-bottom:1.2rem;line-height:1.2;}
+  .about-text p{font-size:1rem;color:#444;line-height:1.75;margin-bottom:1rem;}
+  .about-photo{flex:0 0 320px;height:380px;background:#e8e0d8;border-radius:8px;overflow:hidden;}
+  .about-photo img{width:100%;height:100%;object-fit:cover;object-position:top;}
+  .ai-strip{background:#1a1a1a;color:#fff;padding:2rem 5%;text-align:center;}
+  .ai-strip p{font-size:0.95rem;color:#ccc;max-width:600px;margin:0 auto;}
+  .ai-strip strong{color:#b8973a;}
+  .services{padding:5rem 5%;background:#f5f0eb;}
+  .services-inner{max-width:1100px;margin:0 auto;}
+  .section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;color:#b8973a;text-transform:uppercase;margin-bottom:0.8rem;text-align:center;}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;text-align:center;margin-bottom:0.8rem;}
+  .section-sub{font-size:1rem;color:#555;text-align:center;margin-bottom:3rem;}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
+  .service-card{background:#fff;padding:2rem;border-radius:8px;border:1px solid #e8e0d8;transition:transform 0.2s,box-shadow 0.2s;}
+  .service-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+  .service-icon{font-size:1.5rem;margin-bottom:1rem;}
+  .service-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;}
+  .service-card p{font-size:0.9rem;color:#555;line-height:1.65;}
+  .how{padding:5rem 5%;background:#fff;}
+  .how-inner{max-width:800px;margin:0 auto;}
+  .how-steps{display:flex;flex-direction:column;gap:2.5rem;margin-top:2rem;}
+  .how-step{display:flex;gap:2rem;align-items:flex-start;}
+  .step-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#b8973a;min-width:2.5rem;line-height:1;}
+  .step-line{width:1px;background:#b8973a;flex:1;margin-top:0.5rem;min-height:60px;}
+  .step-content h3{font-size:1rem;font-weight:600;margin-bottom:0.4rem;}
+  .step-content p{font-size:0.9rem;color:#555;line-height:1.65;}
+  .why{padding:5rem 5%;background:#f5f0eb;}
+  .why-inner{max-width:1000px;margin:0 auto;}
+  .why-heading{text-align:center;margin-bottom:3rem;}
+  .why-heading h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1;}
+  .why-heading h2 em{color:#b8973a;font-style:italic;display:block;}
+  .why-divider{width:60px;height:2px;background:#b8973a;margin:1.2rem auto 0;}
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:3rem;}
+  .why-item{background:#fff;padding:1.8rem;border-radius:8px;border-left:3px solid #b8973a;}
+  .why-item h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem;}
+  .why-item p{font-size:0.9rem;color:#555;line-height:1.65;}
+  .why-quote-box{background:#1a1a1a;color:#fff;padding:2.5rem;border-radius:8px;text-align:center;}
+  .why-quote-box blockquote{font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;line-height:1.5;margin-bottom:1rem;color:#f5f0eb;}
+  .why-quote-box cite{font-size:0.85rem;color:#b8973a;font-style:normal;font-weight:600;}
+  .contact{padding:5rem 5%;background:#fff;}
+  .contact-inner{max-width:680px;margin:0 auto;}
+  .contact-inner .section-label,.contact-inner .section-title,.contact-inner .section-sub{text-align:center;}
+  .contact form{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+  .contact input,.contact textarea{width:100%;padding:0.9rem 1rem;border:1px solid #e0d8cf;border-radius:4px;font-family:'Inter',sans-serif;font-size:0.95rem;background:#f5f0eb;color:#1a1a1a;transition:border-color 0.2s;}
+  .contact input:focus,.contact textarea:focus{outline:none;border-color:#b8973a;}
+  .contact textarea{resize:vertical;min-height:140px;}
+  .contact button[type="submit"]{background:#1a1a1a;color:#fff;padding:1rem 2rem;border:none;border-radius:4px;font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s;font-family:'Inter',sans-serif;}
+  .contact button[type="submit"]:hover{background:#333;}
+  footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:center;justify-content:space-between;}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;}
+  .footer-copy{font-size:0.8rem;color:#888;}
+  @media(max-width:768px){
   .hero{flex-direction:column;padding:3rem 5%;gap:2rem;}
   .hero-right{width:100%;}
   .hero-card{width:100%;}
@@ -101,7 +101,8 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
   .nav-links{gap:1rem;}
   .form-row{grid-template-columns:1fr;}
   footer{flex-direction:column;gap:0.5rem;text-align:center;}
-}
+  .why-grid{grid-template-columns:1fr;}
+  }
   </style>
 </head>
 <body>
@@ -115,11 +116,10 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
     <a href="#contact" class="nav-cta">Work With Me</a>
   </div>
 </nav>
-
 <section class="hero">
   <div class="hero-left">
     <h1>Focus on<br/><em>Growth,</em></h1>
-    <p class="hero-sub">I free small business owners from operational chaos.</p>
+    <p class="hero-sub">We free small business owners from operational chaos.</p>
     <p class="hero-desc">Justice Growth handles the systems, tasks, and back-end operations that slow you down, so you can focus on what actually moves your business forward.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">Work With Me</a>
@@ -146,7 +146,6 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
     </div>
   </div>
 </section>
-
 <section id="about" class="about">
   <div class="about-inner">
     <div class="about-text">
@@ -157,15 +156,13 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
       <p>This is not a plug-and-play service. It is a working partnership built around your goals, your voice, and your growth.</p>
     </div>
     <div class="about-photo">
-      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=640&q=80" alt="Kathy Justice, Founder of Justice Growth" />
+      <img src="kathy-justice.jpg" alt="Kathy Justice, Founder of Justice Growth" />
     </div>
   </div>
 </section>
-
 <section class="ai-strip">
   <p><strong>AI-Powered Operations:</strong> Justice Growth uses smart automation tools to eliminate repetitive tasks, streamline communication, and keep your business running like a system, not a scramble.</p>
 </section>
-
 <section id="services" class="services">
   <div class="services-inner">
     <div class="section-label">Services</div>
@@ -173,17 +170,14 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
     <p class="section-sub">Every service is built to remove friction so you can focus on what only you can do.</p>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">&#128197;</div>
         <h3>Calendar &amp; Inbox Management</h3>
         <p>Never miss a meeting or lose a client in the noise. Your calendar stays organized, your inbox stays manageable, and your time stays protected.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">&#128196;</div>
         <h3>Administrative Support</h3>
         <p>From document prep to data entry to vendor coordination, the back-end work gets handled accurately and on time, every time.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">&#9881;</div>
         <h3>Workflow &amp; Systems Design</h3>
         <p>Repeatable processes built around your business. Less chaos, fewer dropped balls, and a team that knows exactly what to do and when.</p>
       </div>
@@ -193,12 +187,10 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
         <p>A smooth, professional onboarding experience that sets the tone for every client relationship, from first contact to fully set up.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">&#128202;</div>
         <h3>Data Entry &amp; Reporting</h3>
         <p>Clean data, accurate records, and clear reports so you always know where your business stands without spending hours pulling it together.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">&#129302;</div>
         <h3>AI-Powered Operations</h3>
         <p>Smart tools and automation layered into your existing workflow to save hours each week and reduce the manual work that drains your energy.</p>
       </div>
@@ -225,7 +217,7 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
         </div>
         <div class="step-content">
           <h3>Custom Scope</h3>
-          <p>Based on the call, I put together a clear, tailored plan that outlines exactly what I will handle, how often, and how we will stay aligned.</p>
+          <p>Based on the call, we put together a clear, tailored plan that outlines exactly what we will handle, how often, and how we will stay aligned.</p>
         </div>
       </div>
       <div class="how-step">
@@ -234,7 +226,7 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
         </div>
         <div class="step-content">
           <h3>Onboarding</h3>
-          <p>Quick, organized, and built to feel seamless. You share access to the tools and systems I need, and I get to work without disrupting your flow.</p>
+          <p>Quick, organized, and built to feel seamless. You share access to the tools and systems we need, and we get to work without disrupting your flow.</p>
         </div>
       </div>
       <div class="how-step">
@@ -249,7 +241,6 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
     </div>
   </div>
 </section>
-
 <section id="why" class="why">
   <div class="why-inner">
     <div class="why-heading">
@@ -276,17 +267,16 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
       </div>
     </div>
     <div class="why-quote-box">
-      <blockquote>"You started your business to do great work, not to manage the chaos around it. That is exactly what I am here to handle."</blockquote>
+      <blockquote>"You started your business to do great work, not to manage the chaos around it. That is exactly what we are here to handle."</blockquote>
       <cite>Kathy Justice, Founder</cite>
     </div>
   </div>
 </section>
-
 <section id="contact" class="contact">
   <div class="contact-inner">
     <div class="section-label">Work With Me</div>
     <h2 class="section-title">Let's Talk About What You Need</h2>
-    <p class="section-sub">Fill out the form below and I will be in touch within one business day.</p>
+    <p class="section-sub">Fill out the form below and we will be in touch.</p>
     <form action="https://formsubmit.co/kathy@justicegrowth.com" method="POST">
       <input type="hidden" name="_captcha" value="false"/>
       <input type="hidden" name="_subject" value="New Inquiry from Justice Growth Website"/>
@@ -300,11 +290,9 @@ footer{background:#1a1a1a;color:#fff;padding:2rem 5%;display:flex;align-items:ce
     </form>
   </div>
 </section>
-
 <footer>
   <div class="footer-logo">Justice Growth</div>
   <div class="footer-copy">&copy; 2026 Justice Growth. All rights reserved.</div>
 </footer>
-
 </body>
 </html>
